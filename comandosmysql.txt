@@ -1,0 +1,29 @@
+rename table NOMEANTIGO to NOMENOVO; 
+//Renomear nome tabela
+
+alter table NOMETABELA add NOVOCAMPO TIPOCAMPO 
+// Adicionar novo campo na tabela
+
+alter table NOMETABELA change CAMPOANTIGO CAMPONOVO TIPOCAMPO 
+// Renomear nome do campo
+
+alter table NOMETABELA modify colunm NOMECAMPO TIPONOVOCAMPO
+// alterar campos da tabela, não altera o nome
+
+alter table NOMETABELA modify NOMECAMPO NOVOTIPO 
+// alterar tipo do campo
+
+alter table NOMETABELA drop NOMECAMPO 
+// Excluir campo
+
+drop table NOME 
+// Excluir tabela
+
+drop database NOME 
+// Excluir Banco
+
+Update NOMETABELA set NOMECAMPO = 'ALTERAÇÃO' where IDTABELA = 'ID DA LINHA QUE DESEJA ALTERAR'
+// Altera linhas da tabela
+
+Delete from NOMETABELA where IDTABELA = 'ID DO CAMPO DESEJADO'
+// Excluir  Linhas da tabela
